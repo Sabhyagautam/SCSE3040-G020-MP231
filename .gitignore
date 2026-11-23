@@ -2,3 +2,8 @@
 .dvc/cache/
 .dvc/tmp/
 .venv/
+__pycache__/
+*.pyc
+.venv/
+mlruns/
+mlartifacts/
