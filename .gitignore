@@ -1,0 +1,4 @@
+.DS_Store
+.dvc/cache/
+.dvc/tmp/
+.venv/
