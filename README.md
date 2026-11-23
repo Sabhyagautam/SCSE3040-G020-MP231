@@ -43,4 +43,70 @@ DVC is used to track the training and later datasets.
 - `later.csv`
 
 The holdout features file is tracked through Git.
+## Environment Setup
+
+Create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install project dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+## Data Cleaning
+
+The data cleaning module handles the identified data quality issues, including:
+- Data leakage
+- Sentinel values
+- Duplicate records
+- Target typos
+- Spelling variations
+
+The cleaned datasets are prepared for model training.
+
+## Model Training and MLflow Tracking
+
+Run the training pipeline:
+
+```bash
+python -m src.mp231.train
+```
+
+MLflow is used to track model experiments, parameters, and evaluation metrics.
+
+- **Experiment name:** `atm_cash_demand`
+- **Registered model:** `atm_demand_model`
+- **Champion alias:** `champion`
+- **Tracking database:** `mlflow.db`
+
+To open the MLflow UI:
+
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
+
+Open `http://127.0.0.1:5000` in your browser.
+
+## Running Tests
+
+Run the test suite:
+
+```bash
+python -m pytest -v
+```
+
+## Technology Stack
+
+- Python
+- Pandas and NumPy
+- Scikit-learn
+- MLflow
+- DVC
+- FastAPI
+- Pytest
 

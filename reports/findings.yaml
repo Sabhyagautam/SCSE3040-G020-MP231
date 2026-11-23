@@ -37,10 +37,10 @@ duplicate_rows:
     true_levels: 3
 
 tracking:
-  experiment_name: null
-  best_run_id: null
-  registered_model_name: null
-  champion_version: null
+  experiment_name: atm_cash_demand
+  best_run_id: 6feb03b7e5754c8293593e3290a7e43c
+  registered_model_name: atm_demand_model
+  champion_version: 5
 
 monitoring:
   psi:
