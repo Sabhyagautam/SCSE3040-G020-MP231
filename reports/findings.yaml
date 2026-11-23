@@ -2,10 +2,9 @@ group_id: "G020"
 problem_id: "MP231"
 
 data_issues:
-  leaking_column:
-    present: true
-    column: cash_reloaded_next_day
-
+leaking_column:
+  present: true
+  column: cash_reloaded_next_day
   unit_mixup:
     present: false
     column: null
@@ -18,9 +17,9 @@ data_issues:
     value: 9999
     count: 64
 
-  duplicate_rows:
-    present: true
-    count: 46
+duplicate_rows:
+  present: true
+  count: 46
 
   stuck_sensor:
     present: false
