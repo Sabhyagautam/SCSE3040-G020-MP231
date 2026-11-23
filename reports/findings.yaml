@@ -1,0 +1,62 @@
+group_id: "G020"
+problem_id: "MP231"
+
+data_issues:
+  leaking_column:
+    present: true
+    column: cash_reloaded_next_day
+
+  unit_mixup:
+    present: false
+    column: null
+    group_value: null
+    factor: null
+
+  sentinel_value:
+    present: true
+    column: distance_to_market_km
+    value: 9999
+    count: 64
+
+  duplicate_rows:
+    present: true
+    count: 46
+
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null
+    end_date: null
+
+  target_typos:
+    present: true
+    count: 11
+
+  spelling_variants:
+    present: true
+    column: atm_type
+    true_levels: 3
+
+tracking:
+  experiment_name: null
+  best_run_id: null
+  registered_model_name: null
+  champion_version: null
+
+monitoring:
+  psi:
+    nearby_shops: null
+    days_to_salary: null
+    footfall_index: null
+    distance_to_market_km: null
+    avg_ticket_rs: null
+    other_atms_1km: null
+  most_drifted_feature: null
+  mae_by_group:
+    'Market': null
+    'Residential': null
+    'Highway': null
+  worst_served_group: null
+  mae_v1_on_check: null
+  mae_v2_on_check: null
+  decision: null
